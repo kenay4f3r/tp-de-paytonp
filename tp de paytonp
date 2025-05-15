@@ -1,0 +1,14 @@
+vida = 1000
+energia = int(input("Energía inicial: "))
+item = input("Item recogido (energizante o curación): ").lower()
+
+
+if item == "energizante":
+    energia = energia + 10 if energia < 50 else energia * 2
+elif item == "curación":
+    vida += 100
+
+
+print("Vida final:", vida)
+print("Energía final:", energia)
+
